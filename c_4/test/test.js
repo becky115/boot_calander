@@ -16,18 +16,19 @@ function init() {
 	let date = new NaruDateTimeMultiPicker("#test1", {
 		inputSt: "startDate",
 		inputEd: "endDate",
-		//originPattern: "YYYYMMDD",
-		//selectorPattern: "YYYY-MM-DD",
+		originPattern: "YYYYMMDDHHmm",
+		////selectorPattern: "YYYY-MM-DD",
+		selectorPattern: "YYYY-MM-DD HH:mm",
 		minRange: 1,//1분 차이
 		maxRange: 1*60*24*searchPeriod//최대 searchPeriod일
 	});
-	console.log(date);
 
 	new NaruDateTimePicker("#test2", {
 		inputSt: "startDate2",
 		inputEd: "endDate2",
-		//originPattern: "YYYYMMDD",
-		//selectorPattern: "YYYY-MM-DD",
+		originPattern: "YYYYMMDDHHmm",
+		////selectorPattern: "YYYY-MM-DD",
+		selectorPattern: "YYYY-MM-DD HH:mm",
 		minRange: 1,//1분 차이
 		maxRange: 1*60*24*searchPeriod//최대 searchPeriod일
 	});

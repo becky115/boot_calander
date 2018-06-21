@@ -1,6 +1,6 @@
 /**
  * Created by ejlee on 2016. 10. 14..
- * bootstrap 3
+ * update bootstrap 4
  */
 
 
@@ -123,9 +123,9 @@ NaruDateTimePicker.defaultOptions = {
 
 		let calWrapper = this.$selector.find(".naru-calendar-wrapper");
 		calWrapper.each(function() {
-			//bootstrap3
-			let spanIcon = $("<span class='input-group-addon naru-calendar-icon'></span>");
-			spanIcon.append("<span class='glyphicon glyphicon-calendar'></span>");
+			//bootstrap4
+			let spanIcon = $("<span class='input-group-addon input-group-append naru-calendar-icon'></span>");
+			spanIcon.append("<span class='input-group-text glyphicon glyphicon-calendar'></span>");
 			$(this).append(spanIcon);
 		});
 
@@ -750,7 +750,7 @@ NaruDateTimeMultiPicker.defaultOptions = {
 	confirmEvent: null
 };
 
-//bootstrap3
+//bootstrap4
 NaruDateTimeMultiPicker.prototype._initDraw = function() {
 	let inputSt = this.options.inputSt;
 	let inputEd = this.options.inputEd;
@@ -770,8 +770,8 @@ NaruDateTimeMultiPicker.prototype._initDraw = function() {
 
 	let calWrapper = this.$selector.find(".naru-calendar-wrapper");
 	calWrapper.each(function() {
-		let spanIcon = $("<span class='input-group-addon naru-calendar-icon'></span>");
-		spanIcon.append("<span class='glyphicon glyphicon-calendar'></span>");
+		let spanIcon = $("<span class='input-group-addon input-group-append naru-calendar-icon'></span>");
+		spanIcon.append("<span class='input-group-text glyphicon glyphicon-calendar'></span>");
 		$(this).append(spanIcon);
 	});
 
@@ -803,8 +803,8 @@ NaruDateTimeMultiPicker.prototype._initDraw = function() {
 	$dateBoxEd.append($dateContentEd);
 
 	let $dateBtnLayer = $("<div class='naru-date-btn-layer'></div>");
-	let $confirmBtn = $("<span class='btn btn-default naru-date-confirm-btn'>" + okBtn + "</span>");
-	let $closeBtn = $("<span class='btn btn-default naru-date-close-btn'>" + closeBtn + "</span>");
+	let $confirmBtn = $("<span class='btn btn-outline-dark naru-date-confirm-btn'>" + okBtn + "</span>");
+	let $closeBtn = $("<span class='btn btn-outline-dark naru-date-close-btn'>" + closeBtn + "</span>");
 	$dateBtnLayer.append($confirmBtn);
 	$dateBtnLayer.append($closeBtn);
 
