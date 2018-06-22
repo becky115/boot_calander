@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" type="text/css" href="../naruSecDatePicker.css">
 	<script src="../jquery/jquery-2.2.3.min.js" type="text/javascript"></script>
-	<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../bootstrap/js/bootstrap.js" type="text/javascript"></script>
 	<script type="text/javascript" src="../moment/min/moment.min.js"></script>
 	<script type="text/javascript" src="../moment/min/moment-with-locales.min.js"></script>
 	<script src="../bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
@@ -25,12 +25,16 @@
 			padding:20px;
 		}
 	</style>
+	<script type="text/javascript">
+		$.fn.bootstrapBtn = $.fn.button.noConflict();
+		$.fn.bstooltip = $.fn.tooltip.noConflict();
+	</script>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="form-horizontal">
-			<div class="form-group test">
-				<div id="test1" class="col-xs-12 col-sm-5 col-md-5 col-lg-5" >
+			<div id="test1" class="form-group test">
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" >
 					<input type='text' id='startDate' class="form-control" value=""/>
 				</div>
 				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
