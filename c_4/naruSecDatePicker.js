@@ -715,6 +715,7 @@ NaruDateTimePicker.defaultOptions = {
 		$objInput.on("shown.bs.tooltip", function() {
 			setTimeout(function() {
 				$objInput.bstooltip('hide');
+				//bootstrap4
 				$objInput.bstooltip('dispose');
 				if(tooltipId !== "") $parent.removeAttr("id");
 			}, 2000);
