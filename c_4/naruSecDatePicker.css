@@ -1,5 +1,6 @@
 /*naru-calendar*/
 .naru-calendar-wrapper{}
+.naru-calendar-wrapper .input-group-text{border-bottom-right-radius: 4px !important;border-top-right-radius: 4px !important;}
 .naru-calendar-wrapper .naru-calendar-input{cursor:pointer;}
 .naru-calendar-wrapper .naru-calendar-icon{cursor:pointer;}
 .naru-calendar-wrapper .datepicker{color:#676a6c;font-size:14px;}
